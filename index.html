@@ -1,0 +1,934 @@
+<html lang="ru">
+    <head>
+        <title>Менеджмент Моженкова</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+
+        <link href="style/fullpage.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="style/bootstrap.min.css">
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="logo">
+                        <img src="img/logo_second.png" alt="Логотип">
+                    </div>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal__body__content">
+                        <h3>
+                            Заполните форму<br>
+                            для бронирования.<br>НАШ менеджер с вами свяжется
+                        </h3>
+                        <form action="mail2.php" method="post">
+                            <input type="text" name="Имя" placeholder="Ваше имя">
+                            <input type="text" name="Телефон" placeholder="Телефон">
+                            <button type="submit">Записаться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div id="fullpage">
+            <header class="section fp-auto-height normal__scrolling" data-anchor="top__section">
+                <div class="container">
+                    <div class="row heading">
+                        <div class="logo">
+                            <img src="img/logo.png" alt="Логотип">
+                        </div>
+                        <div class="header__menu header__menu-desktop" id="header__menu">
+                            <nav class="navbar navbar-expand-lg navbar-light" id="menu">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menu">
+                                        <li class="nav-item" data-menuanchor="ForWhat">
+                                            <a class="nav-links" href="#ForWhat">Для кого</a>
+                                        </li>
+                                        <li class="nav-item" data-menuanchor="schedule">
+                                            <a class="nav-links" href="#schedule">Программа</a>
+                                        </li>
+                                        <li class="nav-item" data-menuanchor="About__Vladimir">
+                                            <a class="nav-links" href="#About__Vladimir">о Владимире</a>
+                                        </li>
+                                        <li class="nav-item" data-menuanchor="Prices">
+                                            <a class="nav-links" href="#Prices">Стоимость</a>
+                                        </li>
+                                        <li class="nav-item" data-menuanchor="Advantages">
+                                            <a class="nav-links" href="#Advantages">Приемущества</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div>
+                            <a class="telephone" href="tel:+7 (495) 136-79-33">+7 (495) 136-79-33</a>
+                        </div>
+                    </div>
+                    <div class="header__menu header__menu-mobile" id="header__menu-mobile">
+                        <nav class="navbar navbar-expand-lg navbar-dark" id="menu-mobile">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav mr-auto mt-2 mt-lg-0" id="menu__id">
+                                    <li class="nav-item" data-menuanchor="ForWhat">
+                                        <a class="nav-links" href="#ForWhat">Для кого</a>
+                                    </li>
+                                    <li class="nav-item" data-menuanchor="schedule">
+                                        <a class="nav-links" href="#schedule">Программа</a>
+                                    </li>
+                                    <li class="nav-item" data-menuanchor="About__Vladimir">
+                                        <a class="nav-links" href="#About__Vladimir">о Владимире</a>
+                                    </li>
+                                    <li class="nav-item" data-menuanchor="Prices">
+                                        <a class="nav-links" href="#Prices">Стоимость</a>
+                                    </li>
+                                    <li class="nav-item" data-menuanchor="Advantages">
+                                        <a class="nav-links" href="#Advantages">Приемущества</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="row flex-column jus__cont__cent">
+                        <h1>
+                            <span>Панель управления</span><br>Собственика<br>и руководителей
+                        </h1>
+                        <h2 class="block__h2">
+                            Авторский мастер&nbsp;-&nbsp;класс <br>от <span>Владимира Моженкова</span>
+                        </h2>
+                        <div class="inf__block__header">
+                            <div class="inf__block__header__left">
+                                <img src="img/calendar.png" alt="">
+                                <p>22 | 23 ноября</p>
+                            </div>
+                            <div class="inf__block__header__right">
+                                <img src="img/pin.png" alt="">
+                                <p>гостинца Украина</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-column timer__big__block">
+                        <h3>
+                            До начала:
+                        </h3>
+                        <div class="timer__block">
+                            <div class="days__block">
+                                <div class="timer" id="days"></div>
+                                <p id="days__text">дней</p>
+                            </div>
+                            <div class="days__block">
+                                <div class="timer" id="hours"></div>
+                                <p id="hours__text">часов</p>
+                            </div>
+                            <div class="days__block">
+                                <div class="timer" id="minutes"></div>
+                                <p id="minutes__text">минут</p>
+                            </div>
+                            <div class="days__block">
+                                <div class="timer" id="seconds"></div>
+                                <p id="second__text">секунд</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button__header">
+                            <a href="" data-toggle="modal" data-target="#myModal">Забронировать</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bottom__content__header">
+                            <div class="left__transform__block"></div>
+                            <div class="right__transform__block">
+                                <p>По мнению участников, внедрение хотя бы
+                                    части  инструментов приводит к увеличению
+                                    операционной прибыли на 15%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="section fp-auto-height second__section" data-anchor="target">
+                <div class="second__section__back">
+                    <div class="container">
+                        <div class="row">
+                            <div class="second__section__block">
+                                <div class="second__section__block__left">
+                                    <div class="block__h2__second">
+                                        <div class="block__h2__second__top">
+                                            <div class="transform__block__second"></div>
+                                            <h2>Цель</h2>
+                                        </div>
+                                        <h3>
+                                            Мастер-класса
+                                        </h3>
+                                    </div>
+                                    <p>
+                                        Этот мастер класс научит держать руку на пульсе компании, а также анализировать, контролировать ключевые показатели и принимать по ним приоритетные решения.
+                                    </p>
+                                    <p>Покажет, как вывести систему корпоративного управления организации на новый уровень через оцифровку бизнес-процессов и сотрудников.</p>
+                                </div>
+                                <div class="second__section__block__right">
+                                    <iframe width="820" height="520" src="https://www.youtube.com/embed/SPsGPebNfC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height third__section" data-anchor="ForWhat">
+                <div class="container">
+                    <div class="row jus__cont__cent">
+                        <div class="block__h2__second__top block__h2__third">
+                            <div class="transform__block__second"></div>
+                            <h2>Вам знакомо?</h2>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap line__third__section">
+                        <div class="mini__block__third__section">
+                            <img src="img/design-process1.png" alt="">
+                            <p>
+                                Отсутствуют ясные и четкие индикаторы эффективности операционной деятельности
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/business.png" alt="">
+                            <p>
+                                Трудности в понимании причин ухода клиентов и подсчете количества потерянных
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/consultant.png" alt="">
+                            <p>
+                                Отсутствие стратегии развития компании или невозможность уделять ей должное
+                                внимание
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap line__third__section">
+                        <div class="mini__block__third__section">
+                            <img src="img/failure.png" alt="">
+                            <p>
+                                Отрицательный денежный поток не смотря на контроль над финансовыми показателями
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/reinforcement.png" alt="">
+                            <p>
+                                Отсутствие показателя производительности труда сотрудников
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/help.png" alt="">
+                            <p>
+                                Потеря управляемости компании и накопление проблем
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row flex-wrap line__third__section">
+                        <div class="mini__block__third__section">
+                            <img src="img/opportunity.png" alt="">
+                            <p>
+                                Непонимание отдачи на вложенный рабочий капитал
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/data-analysis.png" alt="">
+                            <p>
+                                Проблема оценки эффективности операционной деятельности
+                            </p>
+                        </div>
+                        <div class="mini__block__third__section">
+                            <img src="img/high-speed.png" alt="">
+                            <p>
+                                Потеря времени на то, чтобы выяснить,
+                                кто и где «тормозит»
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line__block">
+                    <div class="line"></div>
+                </div>
+            </section >
+
+            <section class="section fp-auto-height fourth__section" data-anchor="after">
+                <div class="fourth__section__back">
+                    <div class="container">
+                        <div class="content__l_r">
+                            <div class="content__left">
+                                <div class="row jus__cont__cent">
+                                    <div class="block__h2__second">
+                                        <div class="block__h2__second__top">
+                                            <div class="transform__block__second"></div>
+                                            <h2>ПОСЛЕ</h2>
+                                        </div>
+                                        <h3>мастер-класса вы</h3>
+                                        <p class="f_s_p">
+                                            получите решение
+                                        </p>
+                                        <p>
+                                            <span class="first__span">для всех вышеописанных задач, <span class="second__span">а также:</span></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row flex-column f_s_big__block">
+                                    <div class="f_s_mini__block">
+                                        <img src="img/select.png" alt="">
+                                        <p>
+                                            Получите инструмент для внедрения Сбалансированной Системы Показателей (ССП)
+                                        </p>
+                                    </div>
+                                    <div class="f_s_mini__block">
+                                        <img src="img/stats.png" alt="">
+                                        <p>
+                                            Научитесь соединять стратегию и операционный план действий
+                                        </p>
+                                    </div>
+                                    <div class="f_s_mini__block">
+                                        <img src="img/briefcase.png" alt="">
+                                        <p>
+                                            Получите методику разработки и внедрения ключевых показателей
+                                        </p>
+                                    </div>
+                                    <div class="f_s_mini__block">
+                                        <img src="img/management.png" alt="">
+                                        <p>
+                                            Получите алгоритм «оцифровки» каждого руководителя и сотрудника
+                                        </p>
+                                    </div>
+                                    <div class="f__s__mini__block__second">
+                                        <div class="f_s_mini__block">
+                                            <img src="img/business1.png" alt="">
+                                            <p>
+                                                Каждый участник получит пакет документов для реального бизнеса. Будет представлена личная панель управления Владимира Моженкова
+                                                из 59 ключевых  показателей
+                                            </p>
+                                        </div>
+                                        <div class="button__block" data-toggle="modal" data-target="#myModal2">
+                                            <a href="#" class="button__fourth__section">Подробнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__right">
+                                <div class="citata"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height fifth__section" data-anchor="ideal">
+                <div class="container">
+                    <div class="row jus__cont__cent">
+                        <div class="block__h2__second">
+                            <div class="block__h2__second__top color__h2__white">
+                                <div class="transform__block__second"></div>
+                                <h2>Идеально</h2>
+                            </div>
+                            <div class="block__h2__second__top color__h2__white padding__none">
+                                <h2>подойдет для:</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="content__l_r">
+                            <div class="fifth__section__content__left">
+                                <div class="f__s__c__l__mini__block">
+                                    <div class="block__img">
+                                        <img src="img/growth.png" alt="">
+                                    </div>
+                                    <div class="block__text">
+                                        <p>Собственника бизнеса</p>
+                                        <div class="red__line__block"></div>
+                                    </div>
+                                </div>
+                                <div class="f__s__c__l__mini__block">
+                                    <div class="block__img">
+                                        <img src="img/Group.png" alt="">
+                                    </div>
+                                    <div class="block__text">
+                                        <p>Топ менеджера</p>
+                                        <div class="red__line__block"></div>
+                                    </div>
+                                </div>
+                                <div class="f__s__c__l__mini__block">
+                                    <div class="block__img">
+                                        <img src="img/line-chart.png" alt="">
+                                    </div>
+                                    <div class="block__text">
+                                        <p>Генерального директора</p>
+                                        <div class="red__line__block"></div>
+                                    </div>
+                                </div>
+                                <div class="f__s__c__l__mini__block">
+                                    <div class="block__img">
+                                        <img src="img/employee.png" alt="">
+                                    </div>
+                                    <div class="block__text">
+                                        <p>Кандидата на позицию Генерального директора</p>
+                                        <div class="red__line__block"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fifth__section__content__right">
+                                <h3>
+                                    ХОЧУ Записаться<br>
+                                    на мастер-класс
+                                </h3>
+                                <form action="" method="post" id="">
+                                    <input type="text" name="Имя" placeholder="Ваше имя">
+                                    <input type="text" name="Телефон" placeholder="Телефон">
+                                    <input type="text" name="Почта" placeholder="E-mail">
+                                    <button type="submit">Записаться</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height six__section" data-anchor="schedule">
+                <div class="container">
+                    <div class="row jus__cont__cent">
+                        <div class="block__h2__second">
+                            <div class="block__h2__second__top">
+                                <div class="transform__block__second"></div>
+                                <h2>Программа</h2>
+                            </div>
+                            <h3>мастер-класса</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="first__MK">
+                            <div class="first__MK__content__top">
+                                <p>
+                                    22 ноября 2019
+                                </p>
+                                <div class="black__line"></div>
+                            </div>
+                            <div class="first__MK__content__center">
+                                <p>ПАНЕЛЬ УПРАВЛЕНИЯ. 25 КЛЮЧЕВЫХ ПОКАЗАТЕЛЕЙ РЕЗУЛЬТАТИВНОЙ КОМПАНИИ</p>
+                            </div>
+                            <div class="first__MK__content__bottom" data-toggle="collapse" href="#collapseExample" role="tab" onclick="replace__main('plus__minus')">
+                                <p>Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse collapse__MK__block panel-collapse scrollable-content" id="collapseExample">
+                                <ul>
+                                    <li class="list__style__circle">
+                                        Формула успеха, как конкурентное преимущество.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Главный и единственный показатель оценки результативности бизнеса собственником и ГЕНеральным директором.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как разработать стратегические цели компании, сколько иметь и как корректировать. Что делать со стратегическим планированием.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        4 ответа, которые вы получите при внедрении Сбалансированной Системы показателей (ССП).
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как каскадировать стратегические цели до каждого этажа управления, до каждого сотрудника. 6 этапов внедрения.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        25 ключевых показателей для компании. Разберем каждый, пропишем формулы, определим зоны ответственности, создадим панель управления организацией.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как внедрить, оформить и шлифовать Сбалансированную Систему <br>Показателей в области:
+                                        <ol class="list__style__number">
+                                            <li>финансового менеджмента</li>
+                                            <li>управления отношениями с клиентом</li>
+                                            <li>бизнес-процессных показателей</li>
+                                            <li>развития сотрудников</li>
+                                            <li>инвестиционной деятельности</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="list__style__circle">
+                                        «Взгляд с вертолёта» или как точно и глубоко анализировать ключевые индикаторы.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Система планирования ключевых показателей деятельности:
+                                        <ol class="list__style__number">
+                                            <li>на год</li>
+                                            <li>месяц</li>
+                                            <li>день</li>
+                                        </ol>
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как «оцифровать» успехообразующие бизнес-процессы. Что должен знать руководитель, чтобы быстро и результативно внедрить ключевые показатели эффективности (KPI). Пять основных ошибок, которые я допустил при внедрении целевых показателей.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как создавать «напряжение» для подразделений и сотрудников на основе методологии:
+                                        <ol class="list__style__number">
+                                            <li>Управления «разрывом»</li>
+                                            <li>«Анализа 3 точек»</li>
+                                            <li>Статистики</li>
+                                            <li>Техники «ефрейторского зазора».</li>
+                                        </ol>
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как разработать, внедрить и применять эталонные показатели.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как оперативно и быстро анализировать показатели план-факт. Техника светофора.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        5 этапов прогнозного планирования. Что такое российский SMART.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        4 наиважнейших показателя для ГЕНерального директора в 2019 году.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row second__MK">
+                        <div class="first__MK">
+                            <div class="first__MK__content__top">
+                                <p>
+                                    23 ноября 2019
+                                </p>
+                                <div class="black__line"></div>
+                            </div>
+                            <div class="first__MK__content__center">
+                                <p>панель управления для первой линейки руководителей</p>
+                            </div>
+                            <div class="first__MK__content__bottom" data-toggle="collapse" href="#collapseExample2" role="tab" onclick="replace__main('plus__minus2')">
+                                <p>Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus2">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse collapse__MK__block scrollable-content" id="collapseExample2">
+                                <ul>
+                                    <li class="list__style__circle">
+                                        Стержневой показатель операционной эффективности бизнеса для ТОП-менеджеров.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как создать правильную структуру компании. Как правильно определить зоны ответственности.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Персональная панель управления на базе ключевых показателей и показателей будущего:
+                                        <ol class="list__style__number">
+                                            <li>коммерческого директора / руководителя отдела продаж</li>
+                                            <li>руководителя маркетинга и рекламы</li>
+                                            <li>руководителя HR-службы</li>
+                                            <li>финансового директора</li>
+                                            <li>главного бухгалтера</li>
+                                            <li>руководителя по IT/программиста</li>
+                                            <li>юриста</li>
+                                            <li>директора по производству / начальника цеха.</li>
+                                        </ol>
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как правильно отражать KPI в планах менеджеров (образец для работы).
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как установить и эффективно внедрить планово-персональные задания специалистам (токарь, слесарь, водитель, кладовщик, секретарь и т. д.).
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li class="list__style__circle">
+                                        Как перевести KPI в КПД.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        28 диагностических (рабочих) показателей компании. Как ими управлять. Разберем каждый.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Диффузия показателей. При каких условиях диагностические показатели становятся ключевыми и наоборот.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        13 показателей будущего, определяющих успех, и один самый Главный.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Роль информационных технологий в реализации стратегических Целей.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Десять барьеров при внедрении Сбалансированной Системы Показателей (ССП).
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Основные различия бухгалтерско-финансового и управленческого учётов.
+                                    </li>
+                                    <li class="list__style__circle">
+                                        Как сделать панель управления гибкой и оперативно
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="block__MK__bottom">
+                            <div class="line__relative"></div>
+                            <a href="#" class="button__six__section">
+                                Забронировать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section seven__section" id="" data-anchor="Prices">
+                <div class="container">
+                    <div class="row jus__cont__cent">
+                        <div class="block__h2__second">
+                            <div class="block__h2__second__top ">
+                                <div class="transform__block__second black__bg"></div>
+                                <h2><span>выберете свой </span></h2>
+                            </div>
+                            <h2 class="padding__none__left"> пакет участника</h2>
+                        </div>
+                    </div>
+                    <div class="row first__line__tickets">
+                        <div class="ticket__block">
+                            <h4>Промо</h4>
+                            <div class="first__MK__content__bottom ticket__block__p__m" data-toggle="collapse" href="#Promo">
+                                <div class="black__line2"></div>
+                                <p onclick="replace__main('plus__minus3')">Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus3" onclick="replace__main('plus__minus3')">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse block__ul__ticket" id="Promo">
+                                <ul class="padding__bottom__ul">
+                                    <li>Участие в мастер-класе</li>
+                                    <li>Сертификат</li>
+                                    <li>Кофе-брейки</li>
+                                </ul>
+                                <p>*Количество ограничено,
+                                    уточняйте у менеджера</p>
+                            </div>
+                            <div class="price">
+                                <p>9900</p>
+                            </div>
+                            <div class="ticket__price__block__button">
+                                <a href="" class="price__button">Купить</a>
+                            </div>
+                        </div>
+                        <div class="ticket__block">
+                            <h4>Стандарт</h4>
+                            <div class="first__MK__content__bottom ticket__block__p__m" data-toggle="collapse" href="#Standart">
+                                <div class="black__line2"></div>
+                                <p onclick="replace__main('plus__minus4')">Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus4" onclick="replace__main('plus__minus4')">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse block__ul__ticket" id="Standart">
+                                <ul>
+                                    <li>Участие в мастер-класе</li>
+                                    <li>Сертификат</li>
+                                    <li>Раздаточный материал</li>
+                                    <li>Кофе-брейки</li>
+                                </ul>
+                                <!--<p>*Количество ограничено,
+                                    уточняйте у менеджера</p>-->
+                            </div>
+                            <div class="price">
+                                <p>14900</p>
+                            </div>
+                            <div class="ticket__price__block__button">
+                                <a href="" class="price__button">Купить</a>
+                            </div>
+                        </div>
+                        <div class="ticket__block">
+                            <h4>Бизнес</h4>
+                            <div class="first__MK__content__bottom ticket__block__p__m" data-toggle="collapse" href="#Business">
+                                <div class="black__line2"></div>
+                                <p onclick="replace__main('plus__minus5')">Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus5" onclick="replace__main('plus__minus5')">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse block__ul__ticket" id="Business">
+                                <ul>
+                                    <li>Закрытый круглый стол в формате обеда в гостинице "Украина" (1-10 чел)</li>
+                                    <li>Размещение ваших рекламных материалов</li>
+                                    <li>Фотосессия</li>
+                                    <li>+ Включен стандартный пакет</li>
+                                </ul>
+                                <!--<p>*Количество ограничено,
+                                    уточняйте у менеджера</p>-->
+                            </div>
+                            <div class="price">
+                                <p>21900</p>
+                            </div>
+                            <div class="ticket__price__block__button">
+                                <a href="" class="price__button">Купить</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row second__line__tickets">
+                        <div class="ticket__block">
+                            <h4>Премиум</h4>
+                            <div class="first__MK__content__bottom ticket__block__p__m" id="" data-toggle="collapse" href="#Premium">
+                                <div class="black__line2"></div>
+                                <p onclick="replace__main('plus__minus6')">Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus6" onclick="replace__main('plus__minus6')">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse block__ul__ticket scrollable-content__second" id="Premium">
+                                <ul>
+                                    <li>Подписка на курсы ГЕНы директора (1 мес)</li>
+                                    <li>VIP места</li>
+                                    <li>Закрытый круглый стол в формате обеда в гостинице "Украина" (1-10 чел)</li>
+                                    <li>Беслпатная парковка</li>
+                                    <li>
+                                        Размещение рекламной конструкции
+                                    </li>
+                                    <li>
+                                        Персональный сувенир от Владимира Моженкова
+                                    </li>
+                                    <li>Фотосессия</li>
+                                    <li>+ Включен стандартный пакет</li>
+                                </ul>
+                                <!--<p>*Количество ограничено,
+                                    уточняйте у менеджера</p>-->
+                            </div>
+                            <div class="price">
+                                <p>29900</p>
+                            </div>
+                            <div class="ticket__price__block__button">
+                                <a href="" class="price__button">Купить</a>
+                            </div>
+                        </div>
+                        <div class="ticket__block">
+                            <h4>Элит</h4>
+                            <div class="first__MK__content__bottom ticket__block__p__m" data-toggle="collapse" href="#Elit">
+                                <div class="black__line2"></div>
+                                <p onclick="replace__main('plus__minus7')">Подробнее</p>
+                                <div class="plus__minus">
+                                    <span id="plus__minus7" onclick="replace__main('plus__minus7')">+</span>
+                                </div>
+                            </div>
+                            <div class="collapse block__ul__ticket scrollable-content" id="Elit">
+                                <ul>
+                                    <li>Индивидуальная консультация в формате ужина в ресторане Erwin</li>
+                                    <li>Ваша рекламная презентация</li>
+                                    <li>Закрытый круглый стол в формате обеда в гостинице "Украина" (1-10 чел)</li>
+                                    <li>Подписка на курсы ГЕНы директора (1 мес)</li>
+                                    <li>VIP места</li>
+                                    <li>Бесплатная парковка</li>
+                                    <li>
+                                        Размещение рекламной конструкции
+                                    </li>
+                                    <li>
+                                        Персональный сувенир от Владимира Моженкова
+                                    </li>
+                                    <li>+ Включен стандартный пакет</li>
+                                </ul>
+                            </div>
+                            <div class="price">
+                                <p>59000</p>
+                            </div>
+                            <div class="ticket__price__block__button">
+                                <a href="" class="price__button">Купить</a>
+                            </div>
+                        </div>
+                        <div class="logoMM__block">
+                            <img src="img/logoMM.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height eight__section" data-anchor="About__Vladimir">
+                <div class="container">
+                    <div class="row jus__end">
+                        <div class="transform__block__three"></div>
+                        <div class="about__VN">
+                            <h2>О Владимире</h2>
+                        </div>
+                    </div>
+                    <div class="row about">
+                        <ul>
+                            <li>
+                                <p><span>Лучший ГЕНдиректор в Европе</span>
+                                    по признанию концерна Audi AG</p>
+                            </li>
+                            <li><p><span>Подготовил</span> более
+                                30 ГЕНеральных директоров</p></li>
+                            <li><p><span>Построил</span> 10 новых предприятий</p></li>
+                            <li><p>Вместе с командой ГЕНерили <span>прибыль</span> EBITDA <span>20 000 000 $</span> в год</p></li>
+                            <li><p>Каждый сотрудник приносил в кассу
+                                <span>1&nbsp;000&nbsp;000&nbsp;$ выручки</span> в год</p></li>
+                            <li><p><span>Первым</span> в России <span>внедрил</span> Сбалансированную Систему Показателей (ССП) и книжный KPI</p></li>
+                            <li><p>Консультируемые компании <span>увеличивают выручку в два раза</span></p></li>
+                            <li>
+                                <p>Провел более <span>700 мастер классов</span> и консультаций <span>в 10 странах и 72 городах</span> России</p>
+                            </li>
+                            <li>
+                                <p><span>Автор книги</span> бестселлера "ГЕН директора. 17 правил позитивного менеджмента по-русски" и книги «Бизнес по чуть-чуть»</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row jus__cont__betw">
+                        <img src="img/citata__2.png" alt="" class="citata__second">
+                        <div class="button__block__about__VN">
+                            <a href="#" class="about__VN__button">Узнать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height nine__section" data-anchor="Advantages">
+                <div class="container">
+                    <div class="row jus__cont__cent">
+                        <div class="block__h2__second__top block__h2__third">
+                            <div class="transform__block__second"></div>
+                            <h2>ПРИЕМУЩЕСТВА</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="content__advantages">
+                            <div class="content__advantages__left">
+                                <div class="content__advantages__left__top">
+                                    <div class="advantage__block">
+                                        <h4>
+                                            29
+                                        </h4>
+                                        <div class="advantage__black__line"></div>
+                                        <p>Единственный бизнес-практик
+                                            с опытом 29 лет</p>
+                                    </div>
+                                    <div class="advantage__block">
+                                        <h4>
+                                            100000
+                                        </h4>
+                                        <div class="advantage__black__line"></div>
+                                        <p>За каждым словом
+                                            — 100 000 часов работы ГЕНеральным директором</p>
+                                    </div>
+                                </div>
+                                <div class="content__advantages__left__bottom">
+                                    <div class="advantage__block">
+                                        <img src="img/winner.png" alt="">
+                                        <div class="advantage__black__line"></div>
+                                        <p>Сертификат после
+                                            обучения</p>
+                                    </div>
+                                    <div class="advantage__block">
+                                        <div class="block__img__preference">
+                                            <img src="img/technical-support.png" alt="">
+                                        </div>
+                                        <div class="advantage__black__line"></div>
+                                        <p>Универсальные инструменты
+                                            для любой отрасли </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content__advantages__right">
+                                <div class="content__advantages__right__top">
+                                    <div class="content__text">
+                                        <div class="rel__line__advantages"></div>
+                                        <p>Участники получают инструментарий, который действительно работает в российских реалиях.
+                                            Тысячи руководителей воспользовались проверенными наработками и добились своих целей.</p>
+                                    </div>
+                                </div>
+                                <div class="content__advantages__right__bottom">
+                                    <div class="content__img">
+                                        <img src="img/logoMM.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section fp-auto-height ten__section" data-anchor="end">
+                <div class="container VN__back">
+                    <div class="row pre__footer">
+                        <div class="pre__footer__content__top">
+                            <div class="block__h2__second">
+                                <div class="block__h2__second__top">
+                                    <div class="transform__block__second"></div>
+                                    <h2>Остались</h2>
+                                </div>
+                                <h2 class="padding__none__left">вопросы?</h2>
+                            </div>
+                            <div class="pre__footer__content__center">
+                                <p class="questions__p">Искренне поделюсь своими секретами.
+                                    Моя Цель – чтобы вы достигли своей цели.</p>
+                            </div>
+                            <div class="pre__footer__content__bottom">
+                                <form action="" class="footer__form">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <input type="text" placeholder="Телефон">
+                                    <button type="submit" class="">
+                                        Задать вопрос
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container">
+                        <div class="row align-items-center footer">
+                            <div class="mail__block">
+                                <a href="mail:sales@mozhenkov.ru">sales@mozhenkov.ru</a>
+                            </div>
+                            <div class="tel__block">
+                                <a href="tel:+7 (495) 136-79-33">+7 (495) 136-79-33</a>
+                            </div>
+                            <div class="links__block">
+                                <a href="#"><img src="img/vk-social-logotype.png" alt=""></a>
+                                <a href="#"><img src="img/facebook-logo.png" alt=""></a>
+                                <a href="#"><img src="img/youtube-symbol.png" alt=""></a>
+                                <a href="#"><img src="img/instagram.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </footer>
+            </section>
+        </div>
+
+    <a href="#top__section" class="up" id="up"></a>
+    </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/easings.min.js"></script>
+    <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage();
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("a.up").click(function() {
+                var elementClick = $(this).attr("href")
+                var destination = $(elementClick).offset().top;
+                jQuery("html:not(:animated),body:not(:animated)").animate({
+                    scrollTop: destination
+                }, 700);
+                return false;
+            });
+        });
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+</html>
